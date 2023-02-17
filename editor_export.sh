@@ -10,6 +10,10 @@
 ## Reason why use $VISUAL
 ## https://unix.stackexchange.com/questions/73484/how-can-i-set-vi-as-my-default-editor-in-unix
 
+################################
+# Prefer to invoke commands directly using the command shell builtin.
+# This way, your code will always execute the command you wanted and 
+# not an alias/function that overrides the name of the command. 
 if [[ -x $(command -v nvim) ]]; then
     export VISUAL=nvim
     export EDITOR="$VISUAL"
