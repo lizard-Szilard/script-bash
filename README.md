@@ -7,7 +7,17 @@
 - [Linux Fu: Better Bash Scripting | Hackaday](https://hackaday.com/2017/07/21/linux-fu-better-bash-scripting/)
 - [💻 My Linux desktop environment (2021 update)](https://blog.wains.be/2021/2021-10-10-my-desktop-environment/)
 
-## Desciption per file
+
+## Store the script
+
+1. store the script in `/opt/bash-script/` add it to environment variable path
+2. make script exucatble `chmod +x <filename.sh>`
+3. add `alias` to `.bash_aliases`
+
+- [How to make a programme executable anywhere in the SHELL](https://stackoverflow.com/questions/56981754/how-to-make-a-programme-executable-anywhere-in-the-shell)
+- [Where/how should I store scripts?](https://unix.stackexchange.com/questions/604818/where-how-should-i-store-scripts)
+
+## Description per file
 
 - `editor_export.sh` this used for set `EDITOR` env
 
@@ -17,3 +27,7 @@ if [[ -f ~/.editor_export.sh ]]; then
     command source ~/.editor_export.sh
 fi
 ```
+
+- `merge_search.sh`
+
+The user can view notes that have been commented in the configuration file by merging the relevant configuration files together.
